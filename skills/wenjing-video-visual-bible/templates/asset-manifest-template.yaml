@@ -1,0 +1,36 @@
+artifact_type: visual_bible_asset_manifest
+artifact_version: "0.1.0"
+status: DRAFT
+project_id: ""
+source_script:
+  path: stage-outputs/03_script_LOCKED.md
+  version: ""
+  sha256: ""
+style_spec:
+  path: stage-outputs/04_visual_bible/style_spec_LOCKED.md
+  sha256: ""
+assets:
+  - asset_id: CHR-001
+    type: character
+    canonical_name: ""
+    required: true
+    script_evidence: []
+    dependencies: []
+    status: SPEC_MISSING
+    source: NEW
+    source_path: ""
+    version: ""
+    sha256: ""
+    rights_status: UNKNOWN
+    file_paths: []
+    notes: ""
+readiness_summary:
+  required: 0
+  ready: 0
+  reused: 0
+  missing: 0
+  stale: 0
+  blocked: 0
+open_change_requests: []
+locked_at: ""
+manifest_sha256: ""

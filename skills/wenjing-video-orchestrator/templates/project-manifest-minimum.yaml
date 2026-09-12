@@ -1,0 +1,32 @@
+schema_version: "afp-video-project/0.7"
+pipeline_version: "0.7"
+project_id: ""
+project_slug: ""
+content_route: "CASE | SOURCE_LOCKED | KNOWLEDGE | STORY"
+control_mode: "GUIDED"
+acceptance_profile: "V0_1_DRY_RUN"
+runtime:
+  adapter: "LOCAL_FILE | DOCUMENT_BOARD"
+  storage_backend: "LOCAL_FILE | DOCUMENT_BOARD"
+  project_ref: ""
+  path_style: "LOGICAL_POSIX"
+  text_encoding: "UTF-8"
+  capabilities:
+    native_file_tools: false
+    python: false
+    shell: false
+    sha256: false
+media_validation_policy:
+  dry_run_required: true
+  real_image_generation_required: false
+  real_video_generation_required: false
+  real_media_validation: "DEFERRED_TO_V0_2_OR_FIRST_PRODUCTION"
+auxiliary_routes:
+  reference_analysis:
+    enabled: false
+artifacts: {}
+# 每个 artifact value 必填：
+# artifact_id, artifact_type, version, status, content_ref, storage_backend,
+# sha256, integrity_status, upstream_refs, upstream_integrity, approved_by, updated_at
+gates: {}
+status: "ACTIVE"

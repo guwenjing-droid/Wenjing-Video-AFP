@@ -1,0 +1,38 @@
+schema_version: wenjing-video-project/0.8
+project_id: minimal-case-001
+title: 激励机制教学案例
+content_route: CASE
+run_mode: DRY_RUN
+guidance_mode: GUIDED
+runtime:
+  adapter: LOCAL_FILE
+  project_ref: ./minimal-case-001
+  text_encoding: UTF-8
+  capabilities: {native_file_tools: true, python: false, shell: false, sha256: true}
+constraints:
+  duration_seconds: 60
+  aspect_ratio: "9:16"
+  language: zh-CN
+reference_analysis:
+  enabled: false
+  artifact_id: null
+media_policy:
+  backend_preference: economical
+  allowed_backends: [seedance]
+  max_shots: 10
+  external_generation_authorized: false
+artifacts:
+  case_truth_lock:
+    artifact_id: case-truth-lock
+    artifact_type: case_truth_lock
+    version: ""
+    status: DRAFT
+    content_ref: stage-outputs/01_case_truth_lock_DRAFT.md
+    storage_backend: LOCAL_FILE
+    sha256: ""
+    integrity_status: DEFERRED
+    upstream_refs: []
+    upstream_integrity: []
+    approved_by: ""
+    updated_at: ""
+state_file: 00_project_state.md

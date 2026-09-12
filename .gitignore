@@ -1,0 +1,22 @@
+# Local and runtime data
+runs/
+change-requests/
+tests/
+tmp/
+temp/
+*.log
+*.tmp
+
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key
+credentials.*
+secrets.*
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

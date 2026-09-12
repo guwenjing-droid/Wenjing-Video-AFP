@@ -1,0 +1,18 @@
+contract_version: "reference-analysis/0.1"
+references:
+  - reference_id: "REF-001"
+    artifact_path: "stage-outputs/00_reference_analysis/REF-001_LOCKED.md"
+    artifact_version: "0.1.0"
+    status: "DRAFT | APPROVED | LOCKED | STALE | BLOCKED"
+    sha256: ""
+    input_modality: "TRANSCRIPT_ONLY | VIDEO | FRAMES_AUDIO | MIXED"
+    observed_materials:
+      transcript: {present: false, path: "", timecoded: false}
+      video: {present: false, path: ""}
+      frames: {present: false, paths: []}
+      audio: {present: false, path: ""}
+    missing_modalities: []
+    analysis_scope: []
+    external_supplements_present: false
+    created_at: ""
+

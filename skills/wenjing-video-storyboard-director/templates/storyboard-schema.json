@@ -1,0 +1,36 @@
+{
+  "artifact_type": "model_agnostic_storyboard",
+  "artifact_version": "0.1.1",
+  "schema_version": "0.1.1",
+  "status": "DRAFT",
+  "project_id": "",
+  "acceptance_profile": "REAL_MEDIA",
+  "media_validation_policy": {"dry_run_required": false, "real_media_validation": "REQUIRED"},
+  "inputs": {
+    "script": {"path": "stage-outputs/03_script_LOCKED.md", "version": "", "sha256": ""},
+    "visual_bible": {"requirement": "NOT_SELECTED", "path": "", "sha256": "", "validation_scope": "REAL_MEDIA", "real_media_status": "PENDING"}
+  },
+  "constraints": {"target_duration_seconds": null, "creative_single_shot_ceiling": null, "aspect_ratio": "", "audio_policy": ""},
+  "duration_policy": {
+    "mode": "SHORTEST_SUFFICIENT",
+    "speech_rate_profile": {"unit": "zh_chars_per_second", "range": [], "selection_rule": ""},
+    "uniform_duration_default": false,
+    "backend_duration_tiers": "NOT_IN_STORYBOARD",
+    "split_overload_before_lock": true
+  },
+  "shot_budget_policy": {
+    "mode": "PENDING_OPERATOR_CHOICE",
+    "decision_source": "",
+    "minimum_legal_shots": null,
+    "selected_shot_count": null,
+    "estimated_generation_requests": null,
+    "protected_coverage": ["SCRIPT", "DIALOGUE", "KNOWLEDGE", "ACTION_CLARITY", "CONTINUITY"],
+    "options": [],
+    "merge_rejections": []
+  },
+  "sequences": [],
+  "coverage": {"script_refs": [], "dialogue_refs": [], "knowledge_refs": [], "uncovered": []},
+  "audit": {"result": "PENDING", "checks": [], "required_asset_binding_closure": "PENDING", "canonical_asset_ids": "PENDING", "unbound_required_assets": [], "invalid_asset_refs": [], "affected_shots": []},
+  "locked_at": "",
+  "artifact_sha256": ""
+}

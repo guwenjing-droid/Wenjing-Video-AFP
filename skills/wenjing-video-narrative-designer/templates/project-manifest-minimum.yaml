@@ -1,0 +1,50 @@
+schema_version: video-project-manifest/v0.3
+project_id: ""
+project_slug: ""
+title: ""
+content_route: CASE
+control_mode: GUIDED
+target_audience: ""
+teaching_goal: ""
+duration: ""
+aspect_ratio: ""
+platforms: []
+
+artifacts:
+  case_truth_lock:
+    status: NOT_STARTED
+    version: ""
+    draft_path: ""
+    locked_path: ""
+    sha256: ""
+  narrative_plan:
+    status: NOT_STARTED
+    version: ""
+    draft_path: ""
+    locked_path: ""
+    sha256: ""
+
+optional_reference_analysis:
+  adoption_intent: NONE  # NONE | OPTIONAL | REQUIRED
+  status: NOT_PROVIDED   # NOT_PROVIDED | AVAILABLE | EXCLUDED | REQUIRED_BUT_INVALID
+  selected: []
+  # 每项：reference_id, path, version, status, sha256, input_modality, analysis_scope
+
+gates:
+  input_integrity: PENDING
+  narrative_brief: PENDING
+  strategy_selection: PENDING
+  reference_input_modality: N/A
+  reference_observability: N/A
+  reference_originality: N/A
+  reference_adoption: N/A
+  boundary_audit: PENDING
+  final_lock: PENDING
+
+preauthorizations:
+  narrative_strategy: false
+  narrative_lock: false
+
+status: ACTIVE
+created_at: ""
+updated_at: ""

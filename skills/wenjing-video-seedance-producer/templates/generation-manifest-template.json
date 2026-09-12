@@ -1,0 +1,40 @@
+{
+  "artifact_type": "seedance_generation_manifest",
+  "artifact_version": "0.1.1",
+  "project_id": "",
+  "acceptance_profile": "REAL_MEDIA",
+  "run_mode": "DRY_RUN",
+  "is_mock": false,
+  "media_generated": false,
+  "external_cost": 0,
+  "status": "DRAFT",
+  "generation_backend_choice": {
+    "selection_mode": "OPERATOR_CHOICE",
+    "status": "PENDING",
+    "selected_provider": "",
+    "selected_model": "",
+    "selected_producer": "",
+    "cost_mode": "ECONOMY",
+    "candidates": [],
+    "fallback_policy": "ASK_OPERATOR"
+  },
+  "shot_budget_policy": {"mode": "PENDING_OPERATOR_CHOICE", "selected_shot_count": null, "estimated_generation_requests": null},
+  "duration_mapping_policy": {
+    "mode": "SMALLEST_SUFFICIENT_TIER",
+    "allow_downward_clamp": false,
+    "on_no_sufficient_tier": "SPLIT_REQUIRED",
+    "mappings": []
+  },
+  "inputs": {
+    "storyboard": {"path": "stage-outputs/05_storyboard_LOCKED.json", "sha256": ""},
+    "visual_bible": {"requirement": "NOT_SELECTED", "path": "", "sha256": ""},
+    "preflight": {"artifact_id": "", "content_ref": "stage-outputs/06_qa/preflight_report_v1.md", "storage_backend": "LOCAL_FILE", "version": "", "sha256": "", "integrity_status": "DEFERRED", "decision": "", "producer_eligible": false},
+    "capability_profile": {"path": "", "sha256": "", "status": "UNRESOLVED"}
+  },
+  "cost_authorization": {"required": false, "status": "NOT_REQUIRED", "scope": [], "estimated_requests": null, "max_generation_rounds": null, "cost_evidence": "COST_UNKNOWN", "evidence": ""},
+  "requests": [],
+  "rerun_scope": {"from_checkpoint": "", "affected_artifacts": [], "unaffected_locked_artifacts": []},
+  "created_at": "",
+  "updated_at": "",
+  "artifact_sha256": ""
+}

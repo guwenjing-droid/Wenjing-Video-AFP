@@ -1,0 +1,13 @@
+schema_version: wenjing-video-runtime-locator/1.1
+artifact_id: ""
+artifact_type: ""
+version: ""
+status: "DRAFT | APPROVED | LOCKED | STALE | REJECTED"
+content_ref: ""
+storage_backend: "LOCAL_FILE | DOCUMENT_BOARD"
+sha256: ""
+integrity_status: "VERIFIED | NOT_OBSERVABLE | DEFERRED | FAIL"
+upstream_refs: []
+upstream_integrity: []
+approved_by: ""
+updated_at: ""

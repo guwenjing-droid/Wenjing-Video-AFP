@@ -1,0 +1,9 @@
+schema_version: "video-project-manifest/v0.7"
+project_id: ""
+content_route: "STORY"
+workflow_mode: "FAST | GUIDED | STRICT"
+acceptance_profile: "V0_1_DRY_RUN"
+story_input: {scope: "SINGLE_EPISODE", premise: "", audience: ""}
+optional_reference_analysis: {adoption_intent: "NONE", selected_refs: []}
+artifacts: {}
+

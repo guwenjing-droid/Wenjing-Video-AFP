@@ -1,0 +1,33 @@
+{
+  "shot_id": "SH-001",
+  "sequence_id": "SQ-001",
+  "beat_id": "BT-001",
+  "source_refs": [],
+  "estimated_duration": null,
+  "creative_required_duration": null,
+  "duration_seconds": null,
+  "duration_driver": "MIXED",
+  "duration_basis": {
+    "speech_time": {"seconds": null, "rate_range": "", "selected_rate": null},
+    "action_time": {"seconds": null, "atoms": 0, "sequence": "NONE"},
+    "camera_time": {"seconds": null, "behavior": "STATIC"},
+    "comprehension_floor": {"seconds": null, "reason": "NONE"},
+    "transition_buffer": 0,
+    "justified_overlap_credit": 0,
+    "explanation": ""
+  },
+  "producer_duration_mapping": "REQUIRED",
+  "narrative_function": "",
+  "composition": {"shot_size": "", "angle": "", "framing": "", "focus": ""},
+  "camera": {"motion": "", "start": "", "end": ""},
+  "blocking": {"subjects": [], "screen_direction": "", "eyeline": ""},
+  "action_atoms": [],
+  "dialogue": [],
+  "audio": {"ambient": [], "sfx": [], "music_intent": ""},
+  "asset_refs": [],
+  "planned_asset_refs": [],
+  "continuity": {"entry": {}, "exit": {}, "neighbors": []},
+  "transition": "CUT",
+  "constraints": [],
+  "status": "DRAFT"
+}

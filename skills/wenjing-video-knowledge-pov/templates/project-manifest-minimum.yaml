@@ -1,0 +1,9 @@
+schema_version: "video-project-manifest/v0.7"
+project_id: ""
+content_route: "KNOWLEDGE"
+workflow_mode: "FAST | GUIDED | STRICT"
+acceptance_profile: "V0_1_DRY_RUN"
+knowledge_input: {sources: [], target_audience: "", learning_objective: ""}
+optional_reference_analysis: {adoption_intent: "NONE", selected_refs: []}
+artifacts: {}
+

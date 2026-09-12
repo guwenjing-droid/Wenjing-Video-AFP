@@ -1,0 +1,34 @@
+profile_type: seedance_capability_profile
+profile_version: 0.1.1
+provider: ""
+model_id: ""
+model_version: ""
+status: UNRESOLVED
+source: ""
+verified_at: ""
+supports:
+  duration:
+    mode: DISCRETE_TIERS
+    tiers_seconds: []
+    min_seconds: null
+    max_seconds: null
+    step_seconds: null
+    trimming_supported: true
+  aspect_ratios: []
+  resolutions: []
+  quality_values: []
+  audio_enabled: []
+  modes: []
+  reference_inputs:
+    enabled: false
+    max_count: null
+    order_semantics: explicit
+limitations: []
+cost:
+  unit: UNKNOWN
+  amount: null
+  currency_or_points: UNKNOWN
+  evidence_status: COST_UNKNOWN
+  notes: ""
+output_contract: {}
+profile_sha256: ""

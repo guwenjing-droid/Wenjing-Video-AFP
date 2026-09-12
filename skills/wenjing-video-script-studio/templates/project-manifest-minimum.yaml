@@ -1,0 +1,10 @@
+schema_version: "afp-video-project/0.3"
+project_id: ""
+content_route: "CASE"
+artifacts:
+  - {path: "stage-outputs/01_case_truth_lock_LOCKED.md", status: "LOCKED", artifact_version: "", sha256: ""}
+  - {path: "stage-outputs/02_narrative_plan_LOCKED.md", status: "LOCKED", artifact_version: "", sha256: ""}
+  - {path: "stage-outputs/03_script_DRAFT.md", status: "DRAFT", artifact_version: "0.1.0", sha256: ""}
+open_change_requests: []
+next_station: "wenjing-video-script-studio:P0"
+

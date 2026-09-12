@@ -1,0 +1,24 @@
+{
+  "schema_version": "generation-manifest/0.1",
+  "run_mode": "DRY_RUN",
+  "backend": "seedance",
+  "external_calls": 0,
+  "estimated_cost": 0,
+  "duration_mapping_policy": {
+    "mode": "SMALLEST_SUFFICIENT_TIER",
+    "allow_downward_clamp": false,
+    "mappings": [
+      {"shot_id":"shot-01","creative_required_duration":2.5,"selected_generation_duration":4,"mapping":"ROUND_UP_AND_TRIM","trim_surplus_seconds":1.5}
+    ]
+  },
+  "shots": [
+    {"shot_id": "shot-01", "mock_result": "SUCCESS"},
+    {"shot_id": "shot-02", "mock_result": "SUCCESS"},
+    {"shot_id": "shot-03", "mock_result": "FAILED_RETRYABLE"}
+  ],
+  "restart_policy": {
+    "scope": ["shot-03"],
+    "from_checkpoint": "PREFLIGHT_DRY_RUN_GREEN"
+  },
+  "real_media_quality": "NOT_VALIDATED"
+}

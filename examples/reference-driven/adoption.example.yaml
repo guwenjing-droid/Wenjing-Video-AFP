@@ -1,0 +1,15 @@
+reference_artifact: reference-analysis.example
+target_route: KNOWLEDGE
+priority: "user_and_content_truth > reference_analysis"
+adopt:
+  - rule: counterintuitive_question_then_delayed_answer
+    status: optional
+reject:
+  - rule: source_specific_data_or_wording
+    reason: not_transferable
+unobservable:
+  - camera
+  - performance
+  - subtitles
+  - music
+  - sound_effects

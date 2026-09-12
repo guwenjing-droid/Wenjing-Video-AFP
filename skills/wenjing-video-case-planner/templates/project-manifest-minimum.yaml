@@ -1,0 +1,39 @@
+schema_version: video-project-manifest/v0.2
+project_id: ""
+project_slug: ""
+title: ""
+content_route: CASE
+control_mode: GUIDED
+source_policy: GUIDED
+continuity_level: MEDIUM
+engagement_mode: ""
+target_audience: ""
+teaching_goal: ""
+duration: ""
+aspect_ratio: ""
+platforms: []
+model_backend: seedance
+cost_risk: MEDIUM
+artifacts:
+  case_truth_lock:
+    artifact_id: "case-truth-lock"
+    artifact_type: "case_truth_lock"
+    status: NOT_STARTED
+    version: ""
+    content_ref: "stage-outputs/01_case_truth_lock_LOCKED.md"
+    storage_backend: "LOCAL_FILE"
+    draft_path: ""
+    locked_path: ""
+    sha256: ""
+    integrity_status: DEFERRED
+    upstream_refs: []
+    upstream_integrity: []
+    approved_by: ""
+    updated_at: ""
+gates:
+  truth_audit: PENDING
+  teaching_direction: PENDING
+  final_lock: PENDING
+status: ACTIVE
+created_at: ""
+updated_at: ""

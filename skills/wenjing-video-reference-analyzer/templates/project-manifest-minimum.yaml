@@ -1,0 +1,12 @@
+schema_version: "afp-video-project/0.3"
+project_id: ""
+content_route: "CASE | UNSET"
+auxiliary_routes:
+  reference_analysis:
+    enabled: true
+    adoption_intent: "OPTIONAL"
+    manifest_path: "stage-outputs/00_reference_analysis/reference_analysis_manifest.yaml"
+artifacts: []
+open_change_requests: []
+next_station: "wenjing-video-reference-analyzer:P0"
+

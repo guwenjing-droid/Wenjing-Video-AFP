@@ -1,0 +1,54 @@
+schema_version: "wenjing-video-afp-portable/1.1"
+release_name: "Wenjing-Video-AFP-Portable"
+release_version: "1.1.0"
+created_date: "2026-09-12"
+architecture:
+  pattern: "Pattern 5"
+  orchestrators: 1
+  independent_skills: 11
+  total_skills: 12
+supported_routes:
+  primary: [CASE, SOURCE_LOCKED, KNOWLEDGE, STORY]
+  optional_branches: [REFERENCE_DRIVEN]
+validation:
+  dry_run: passed
+  mock_restart_resume: passed
+  codex_case_regression: passed
+  codex_knowledge_regression: passed
+  workbuddy_runtime_regression: passed
+  youmind_document_adapter_regression: passed
+  real_media_generation: not_performed
+  real_media_quality: not_validated
+  external_media_cost: 0
+skills:
+  - {name: wenjing-video-orchestrator, type: orchestrator, version: "0.2.1", path: skills/wenjing-video-orchestrator, p9: passed}
+  - {name: wenjing-video-case-planner, type: independent, version: "0.1.1", path: skills/wenjing-video-case-planner, p9: passed}
+  - {name: wenjing-video-reference-analyzer, type: independent, version: "0.1.1", path: skills/wenjing-video-reference-analyzer, p9: passed}
+  - {name: wenjing-video-narrative-designer, type: independent, version: "0.1.1", path: skills/wenjing-video-narrative-designer, p9: passed}
+  - {name: wenjing-video-script-studio, type: independent, version: "0.1.1", path: skills/wenjing-video-script-studio, p9: passed}
+  - {name: wenjing-video-source-locked-adapter, type: independent, version: "0.1.1", path: skills/wenjing-video-source-locked-adapter, p9: passed}
+  - {name: wenjing-video-knowledge-pov, type: independent, version: "0.1.1", path: skills/wenjing-video-knowledge-pov, p9: passed}
+  - {name: wenjing-video-story-studio, type: independent, version: "0.1.1", path: skills/wenjing-video-story-studio, p9: passed}
+  - {name: wenjing-video-visual-bible, type: independent, version: "0.1.2", path: skills/wenjing-video-visual-bible, p9: passed}
+  - {name: wenjing-video-storyboard-director, type: independent, version: "0.1.3", path: skills/wenjing-video-storyboard-director, p9: passed}
+  - {name: wenjing-video-continuity-reviewer, type: independent, version: "0.1.3", path: skills/wenjing-video-continuity-reviewer, p9: passed}
+  - {name: wenjing-video-seedance-producer, type: independent, version: "0.1.3", path: skills/wenjing-video-seedance-producer, p9: passed}
+contracts:
+  artifact: contracts/artifact-contracts.md
+  manifest: contracts/manifest-schema.md
+  gates: contracts/gate-policy.md
+  state_resume: contracts/state-resume-rules.md
+  routing: contracts/routing-contract.md
+runtime:
+  contract: runtime/runtime-contract.md
+  locator_schema: runtime/artifact-locator-schema.yaml
+  adapters: [runtime/local-file-adapter.md, runtime/document-board-adapter.md]
+checksum_file: checksums/SHA256SUMS.txt
+checksum_scope: "all regular release files except checksums/SHA256SUMS.txt"
+excluded_content:
+  - construction_state
+  - construction_audits
+  - runtime_labs
+  - test_logs_and_fixtures
+  - runs_and_change_requests
+  - temporary_or_mock_media
